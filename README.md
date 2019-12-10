@@ -21,7 +21,7 @@ This dataset is sourced from the IBM Watson Platform- UCI Machine Learning Repos
 The classification goal is to predict if the client will subscribe (yes/no) a term deposit (Response variable).
 
 
-
+![Visuaization-1]
 # 3.	File Descriptions
 
 All  the data /scripts/models can be accessed in GitHub using following URL
@@ -67,7 +67,7 @@ Target (Response variable):
 
 Sample Data (Source: bank_marketing_data.csv(details in github repository) file)
 
- https://github.com/paridad/Udacity-Nano-DS-Capstone/blob/master/Sample_Data.png
+![Visuaization-1](https://github.com/paridad/Udacity-Nano-DS-Capstone/blob/master/Sample_Data.png)
  
  
 
