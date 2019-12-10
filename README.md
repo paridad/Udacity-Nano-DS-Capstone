@@ -20,3 +20,7 @@
 
 
 4.	Run the Notebook and review the result. 
+
+5. Pls. refer to Medium link below for Analysis details
+Medium URL: https://medium.com/bank-marketing-campaign-response-rate-prediction/project-overview-b901e02c1302?sk=ec65a652f86d6314b88185fc3ca296df
+
