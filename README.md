@@ -43,25 +43,26 @@ All  the data /scripts/models can be accessed in GitHub using following URL
 # 5.	Analysis
 
 ## Data Exploration:
-Started with 45,211 Data points and 17 features/columns
-Data shape (rows, cols): (45211, 17)
-Key Predictor/feature variables, but not limited to:
-Continuous/Numeric Variables: 
-•	Age
-•	Balance
-•	Campaign(# of contacts performed during this campaign)
-•	Duration (Last Contact  duration)
+	Started with 45,211 Data points and 17 features/columns
+	Data shape (rows, cols): (45211, 17)
+	Key Predictor/feature variables, but not limited to:
+	
+###### Continuous/Numeric Variables: 
+		Age
+		Balance
+		Campaign(# of contacts performed during this campaign)
+		Duration (Last Contact  duration)
 
-Categorical Variables:
-•	Job
-•	Marital Status
-•	Education
-•	Default to a loan Payment
-•	Own House
-•	Loan taken
+###### Categorical Variables:
+	 Job
+	 Marital Status
+	 Education
+	 Default to a loan Payment
+	 Own House
+	 Loan taken
 
-Target (Response variable):
-•	Term Deposit (Yes/No) 
+###### Target (Response variable):
+	 Term Deposit (Yes/No) 
 
 Sample Data (Source: bank_marketing_data.csv(details in github repository) file)
 
@@ -85,22 +86,22 @@ Histogram for Numeric Variable with respect to term deposit Flag = "Yes"
 
 
 ###### Observation:
-•	Middle age Customers have accepted the Term deposit offer
-•	Lower account Balance led to higher acceptance of term deposit offer 
-•	Lower Contact call duration led to higher acceptance of term deposit offer 
-•	Lower Campaign(# of contacts) call  resulted higher acceptance of term deposit offer 
-•	Low Previous # of contacts led to acceptance of term deposit offers
+		Middle age Customers have accepted the Term deposit offer
+		Lower account Balance led to higher acceptance of term deposit offer 
+		Lower Contact call duration led to higher acceptance of term deposit offer 
+		Lower Campaign(# of contacts) call  resulted higher acceptance of term deposit offer 
+		Low Previous # of contacts led to acceptance of term deposit offers
 
 
 ## For Categorical Variables:
-•	The Customers with following attributes have accepted the term deposit offers
-•	Job (Management, Technician, Admin, Blue- Collar)
-•	Married
-•	Default-No Defaulted Customers
-•	Education-Customers with tertiary/secondary education
-•	Housing-Customers with (no Housing)
-•	Loan-Customers with no loan
-•	Contact-Customer contacted by Cellular 
+	The Customers with following attributes have accepted the term deposit offers:
+		Job (Management, Technician, Admin, Blue- Collar)
+		Married
+		Default-No Defaulted Customers
+		Education-Customers with tertiary/secondary education
+		Housing-Customers with (no Housing)
+		Loan-Customers with no loan
+		Contact-Customer contacted by Cellular 
 
  ![Visuaization-4](https://github.com/paridad/Udacity-Nano-DS-Capstone/blob/master/cat_bar_chart.png)
 
@@ -123,14 +124,10 @@ I have used the following Strategy for Model selection process
 
 
 (1)	GridSearch Cross validation- I have used the K-fold Cross validation to measure the effectiveness of the model.  This step randomly divides the set of observations into k groups. The 1st set is treated as Validation set and the method is fit (Training) on remaining k-1 fold
-Fitting 10 folds for each of 40 candidates, totalling 400 fits
-[Parallel(n_jobs=-1)]: Using backend LokyBackend with 8 concurrent workers.
-[Parallel(n_jobs=-1)]: Done  34 tasks      | elapsed:   10.4s
-[Parallel(n_jobs=-1)]: Done 184 tasks      | elapsed:  2.7min
-[Parallel(n_jobs=-1)]: Done 400 out of 400 | elapsed:  3.5min finished
-best_score(Mean cross_validated score) : 0.8712323773325226
-Best Penalty: l1
-Best C: 1.0
+
+                best_score(Mean cross_validated score) : 0.8712323773325226
+                Best Penalty: l1
+		Best C: 1.0
 
 (1)	Test the Model using Test Data
 
@@ -156,6 +153,8 @@ c.	Model has in correctly predicted 75 customers to accept the offer(False Posit
 d.	Model has correctly predicted 860 customers NOT to accept the offer( False negative)
 
 
+![Visuaization-8](https://github.com/paridad/Udacity-Nano-DS-Capstone/blob/master/Confuse_matrix.png)
+
  
 
 (3)	Model -ROC Curve
@@ -163,6 +162,8 @@ Receiver Operating Characteristic(ROC) curve is a plot of the true positive rate
  
 Based on Model effectiveness of 87% and Recall of 81%, I would believe our model is predicting the customer acceptance of term deposit offers correctly. However, the Model needs to get updated/trained with new Ground Truth Labels (i.e. new Term deposit accepted data) to sustain the prediction accuracy.
 
+
+![Visuaization-7](https://github.com/paridad/Udacity-Nano-DS-Capstone/blob/master/ROC.png)
 
 
 (4)	Significant Features from the Model
@@ -174,7 +175,7 @@ The following features/predictor variables are significant to drive higher respo
 
  
 
-# 7.	CONCLUSION 
+# 7.	Conclusion 
 
 Reflection
 •	I believe I have followed the Machine learning flows in this capstone Project, by leveraging Udacity excellent learning materials and 6 credit hours course work from Georgia Tech-Online MS in Analytics program.
