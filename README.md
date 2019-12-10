@@ -48,10 +48,10 @@ All  the data /scripts/models can be accessed in GitHub using following URL
 	Key Predictor/feature variables, but not limited to:
 	
 ###### Continuous/Numeric Variables: 
-		Age
-		Balance
-		Campaign(# of contacts performed during this campaign)
-		Duration (Last Contact  duration)
+	Age
+	Balance
+	Campaign(# of contacts performed during this campaign)
+	Duration (Last Contact  duration)
 
 ###### Categorical Variables:
 	 Job
@@ -177,27 +177,31 @@ The following features/predictor variables are significant to drive higher respo
 
 # 7.	Conclusion 
 
-Reflection
-•	I believe I have followed the Machine learning flows in this capstone Project, by leveraging Udacity excellent learning materials and 6 credit hours course work from Georgia Tech-Online MS in Analytics program.
-•	Still I think Modeling is an art. We get better at it as we use it more. 
-•	Based on prediction recall (=81%), I think this model should it be used in a general setting to predict term deposit offers for Bank Customers.
-Improvement
-•	Model Tuning
-o	Need to retrain the model with ground truth (i.e. new Bank customers data with accepted term deposit offers) to boost model prediction
-o	Need to leverage Amazon Sage Maker or any other Cloud Machine learning Platform to avail Model tuning options. 
-o	We can use sklearn ‘s RandomizedSearchCV to perform random search on Hyper Parameters
-o	We could have used different classification models such as:
-	Gaussian Naive Bayes
-	Decision Tree
-	Random Forest
-	XGBoost
+###### Reflection
 
-•	Training Set Quality 
-o	Need to resample data in order to get a “balanced” data set
-o	Need to ensure all the required predictor variable data were populated
-o	Instead of removing rows with Missing data, need to assess the data imputation methods (such as Mean/Mode/Median, Prediction model etc.)
+	Still I think Modeling is an art. We get better at it as we use it more. 
+	Based on prediction recall (=81%), I think this model should it be used in a general setting to predict term deposit offers for 
+	Bank Customers.
+	
+###### Improvement
 
-References
+**Model Tuning**
+	 - Need to retrain the model with ground truth (i.e. new Bank customers data with accepted term deposit offers) to boost model
+	 prediction.
+	- Need to leverage Amazon Sage Maker or any other Cloud Machine learning Platform to avail Model tuning options. 
+	- We can use sklearn ‘s RandomizedSearchCV to perform random search on Hyper Parameters
+	- We could have used different classification models such as:
+		Gaussian Naive Bayes
+		Decision Tree
+		Random Forest
+		XGBoost
+
+**Training Set Quality** 
+	- Need to resample data in order to get a “balanced” data set
+	- Need to ensure all the required predictor variable data were populated
+	- Instead of removing rows with Missing data, need to assess the data imputation methods (such as Mean/Mode/Median, Prediction model etc.)
+
+**References**
 1.	Choosing the right metric  Choosing the Right Metric for Evaluating Machine Learning Models.
 2.	Article  about What metrics should be used for evaluating a model on an imbalanced data set
 3.	Article on various techniques of the data exploration process.
