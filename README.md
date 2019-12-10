@@ -186,20 +186,23 @@ The following features/predictor variables are significant to drive higher respo
 ###### Improvement
 
 **Model Tuning**
-	 - Need to retrain the model with ground truth (i.e. new Bank customers data with accepted term deposit offers) to boost model
+
+	  Need to retrain the model with ground truth (i.e. new Bank customers data with accepted term deposit offers) to boost model
 	 prediction.
-	- Need to leverage Amazon Sage Maker or any other Cloud Machine learning Platform to avail Model tuning options. 
-	- We can use sklearn ‘s RandomizedSearchCV to perform random search on Hyper Parameters
-	- We could have used different classification models such as:
-		Gaussian Naive Bayes
-		Decision Tree
-		Random Forest
-		XGBoost
+	  Need to leverage Amazon Sage Maker or any other Cloud Machine learning Platform to avail Model tuning options. 
+	  We can use sklearn ‘s RandomizedSearchCV to perform random search on Hyper Parameters
+	  We could have used different classification models such as:
+		- Gaussian Naive Bayes
+		- Decision Tree
+		- Random Forest
+		- XGBoost
 
 **Training Set Quality** 
+
 	- Need to resample data in order to get a “balanced” data set
 	- Need to ensure all the required predictor variable data were populated
-	- Instead of removing rows with Missing data, need to assess the data imputation methods (such as Mean/Mode/Median, Prediction model etc.)
+	- Instead of removing rows with Missing data, need to assess the data imputation methods (such as Mean/Mode/Median, Prediction 
+	model etc.)
 
 **References**
 1.	Choosing the right metric  Choosing the Right Metric for Evaluating Machine Learning Models.
