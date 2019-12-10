@@ -20,8 +20,6 @@ I have used the data is which is related with direct marketing campaigns (phone 
 This dataset is sourced from the IBM Watson Platform- UCI Machine Learning Repository. This data set contains 10% of the examples and 17 inputs, randomly selected from the full data set, bank-full.csv. The full data set is available on the Watson Studio Community as well as at https://archive.ics.uci.edu/ml/datasets/Bank+Marketing.
 The classification goal is to predict if the client will subscribe (yes/no) a term deposit (Response variable).
 
-
-![Visuaization-1]
 # 3.	File Descriptions
 
 All  the data /scripts/models can be accessed in GitHub using following URL
@@ -76,14 +74,17 @@ For Continuous/Numeric variables (age, balance, duration etc.):
 
 Histogram for Numeric Variable with respect to term deposit Flag = "No"
  
-
+![Visuaization-2](https://github.com/paridad/Udacity-Nano-DS-Capstone/blob/master/Num_hist_term%20deposit-no.png)
 
 
 
 Histogram for Numeric Variable with respect to term deposit Flag = "Yes"
  
 
-Observation:
+![Visuaization-3](https://github.com/paridad/Udacity-Nano-DS-Capstone/blob/master/Num_hist_term%20deposit-yes.png)
+
+
+###### Observation:
 •	Middle age Customers have accepted the Term deposit offer
 •	Lower account Balance led to higher acceptance of term deposit offer 
 •	Lower Contact call duration led to higher acceptance of term deposit offer 
@@ -91,7 +92,7 @@ Observation:
 •	Low Previous # of contacts led to acceptance of term deposit offers
 
 
-For Categorical Variables:
+## For Categorical Variables:
 •	The Customers with following attributes have accepted the term deposit offers
 •	Job (Management, Technician, Admin, Blue- Collar)
 •	Married
@@ -101,12 +102,16 @@ For Categorical Variables:
 •	Loan-Customers with no loan
 •	Contact-Customer contacted by Cellular 
 
- 
+ ![Visuaization-4](https://github.com/paridad/Udacity-Nano-DS-Capstone/blob/master/cat_bar_chart.png)
 
 
-1.	For Target (Response) variable-
+###### For Target (Response) variable-
 •	Term deposit (Yes/No)
 o	Observation:  Imbalanced Data set. As you can see, we have more term deposit (No) data points than term deposit(Yes) Data points
+
+
+![Visuaization-5](https://github.com/paridad/Udacity-Nano-DS-Capstone/blob/master/target_variable.png)
+
 
  # 6. Results
 
@@ -158,9 +163,14 @@ Receiver Operating Characteristic(ROC) curve is a plot of the true positive rate
  
 Based on Model effectiveness of 87% and Recall of 81%, I would believe our model is predicting the customer acceptance of term deposit offers correctly. However, the Model needs to get updated/trained with new Ground Truth Labels (i.e. new Term deposit accepted data) to sustain the prediction accuracy.
 
+
+
 (4)	Significant Features from the Model
 
 The following features/predictor variables are significant to drive higher response rate for term deposit offers 
+
+
+![Visuaization-6](https://github.com/paridad/Udacity-Nano-DS-Capstone/blob/master/significant.png)
 
  
 
