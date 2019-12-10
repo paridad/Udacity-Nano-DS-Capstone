@@ -66,7 +66,8 @@ Target (Response variable):
 •	Term Deposit (Yes/No) 
 
 Sample Data (Source: bank_marketing_data.csv(details in github repository) file)
- 
+
+ https://github.com/paridad/Udacity-Nano-DS-Capstone/blob/master/Sample_Data.png
  
  
 
