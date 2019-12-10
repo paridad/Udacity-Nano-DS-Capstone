@@ -42,7 +42,7 @@ All  the data /scripts/models can be accessed in GitHub using following URL
        - Run the Notebook and analyze the result. 
 
 
-# 6.	Analysis
+# 5.	Analysis
 
 ## Data Exploration:
 Started with 45,211 Data points and 17 features/columns
@@ -107,7 +107,7 @@ For Categorical Variables:
 •	Term deposit (Yes/No)
 o	Observation:  Imbalanced Data set. As you can see, we have more term deposit (No) data points than term deposit(Yes) Data points
 
- 
+ # 6. Results
 
 Model Evaluation and Validation
 I have used the following Strategy for Model selection process
@@ -163,7 +163,7 @@ The following features/predictor variables are significant to drive higher respo
 
  
 
-# 8.	CONCLUSION 
+# 7.	CONCLUSION 
 
 Reflection
 •	I believe I have followed the Machine learning flows in this capstone Project, by leveraging Udacity excellent learning materials and 6 credit hours course work from Georgia Tech-Online MS in Analytics program.
